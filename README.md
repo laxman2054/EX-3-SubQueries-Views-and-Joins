@@ -1,0 +1,131 @@
+# EX-3-SubQueries-Views-and-Joins
+
+
+Create employee Table
+
+
+CREATE TABLE EMP (EMPNO NUMBER(4) PRIMARY KEY,ENAME VARCHAR2(10),JOB VARCHAR2(9),MGR NUMBER(4),HIREDATE DATE,SAL NUMBER(7,2),COMM NUMBER(7,2),DEPTNO NUMBER(2));
+
+Insert the values
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7369, 'SMITH', 'CLERK', 7902, '17-DEC-80', 800, NULL, 20);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '20-FEB-81', 1600, 300, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7521, 'WARD', 'SALESMAN', 7698, '22-FEB-81', 1250, 500, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7566, 'JONES', 'MANAGER', 7839, '02-APR-81', 2975, NULL, 20);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7654, 'MARTIN', 'SALESMAN', 7698, '28-SEP-81', 1250, 1400, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7698, 'BLAKE', 'MANAGER', 7839, '01-MAY-81', 2850, NULL, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7782, 'CLARK', 'MANAGER', 7839, '09-JUN-81', 2450, NULL, 10);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7788, 'SCOTT', 'ANALYST', 7566, '19-APR-87', 3000, NULL, 20);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7839, 'KING', 'PRESIDENT', NULL, '17-NOV-81', 5000, NULL, 10);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7844, 'TURNER', 'SALESMAN', 7698, '08-SEP-81', 1500, 0, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7876, 'ADAMS', 'CLERK', 7788, '23-MAY-87', 1100, NULL, 20);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7900, 'JAMES', 'CLERK', 7698, '03-DEC-81', 950, NULL, 30);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7902, 'FORD', 'ANALYST', 7566, TO_DATE('03-DEC-81', 'DD-MON-RR'), 3000, 20, 20);
+
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES (7934, 'MILLER', 'CLERK', 7782, TO_DATE('23-JAN-82', 'DD-MON-RR'), 1300, 10, 10);
+
+
+
+Create department table
+
+
+CREATE TABLE DEPT (DEPTNO NUMBER(2) PRIMARY KEY,DNAME VARCHAR2(14),LOC VARCHAR2(13));
+
+
+
+
+
+
+Insert the values in the department table
+
+
+
+INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (10, 'ACCOUNTING', 'NEW YORK');
+
+INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (20, 'RESEARCH', 'DALLAS');
+
+INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (30, 'SALES', 'CHICAGO');
+
+INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
+
+
+Q1) List the name of the employees whose salary is greater than that of employee with empno 7566.
+
+
+QUERY:
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/bb3c3d74-5cc7-42dc-af3e-13aea99add40)
+
+
+OUTPUT:
+
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/230093a3-73d5-4efe-8648-0e37fd8df450)
+
+
+Q2) List the ename,job,sal of the employee who get minimum salary in the company.
+
+
+
+QUERY:
+
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/98e169f5-ddae-4c6b-a631-3ef920d465f8)
+
+
+OTUPUT:
+
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/2cfca001-d42e-4bcd-bb94-036b365542cd)
+
+
+Q10) Perform Left and right join on both tables
+
+
+
+Left Join
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/c5d324f7-d33d-4e4d-84bc-85ee7cf14011
+
+
+Right Join
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/aa57c7f6-5a2e-4764-9ac9-451b03e9e937
+
+
+
+
+OUTPUT:
+
+Left Join
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/2e04a860-dd7e-4ab5-9631-1936ad8408b0)
+
+
+
+
+Right Join
+
+
+![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/ec1d0688-cb49-4073-9da9-3437c7acfa43)
+
+
+
+
+
+
+
+
+
+
