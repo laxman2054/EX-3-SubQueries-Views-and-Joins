@@ -1,5 +1,9 @@
 # EX-3-SubQueries-Views-and-Joins
 
+# DATE:
+
+# AIM : TO MAKE AN EXPRIMENT ON THE SUBQURIES, VIEWS AND JOINS
+
 
 Create employee Table
 
