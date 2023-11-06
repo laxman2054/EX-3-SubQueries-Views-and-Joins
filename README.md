@@ -124,6 +124,8 @@ Right Join
 
 ![image](https://github.com/laxman2054/EX-3-SubQueries-Views-and-Joins/assets/118680826/ec1d0688-cb49-4073-9da9-3437c7acfa43)
 
+# RESULT : THUS, THE OUTPUT IS VERIFED SUCCESFULLY.
+
 
 
 
